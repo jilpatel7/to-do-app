@@ -1,0 +1,7 @@
+query GetAllTodos($userId: Int!) {
+  todo(where: { user_id: { _eq: $userId } }) {
+    id
+    name
+    description
+  }
+}
